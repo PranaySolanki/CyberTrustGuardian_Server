@@ -8,12 +8,12 @@ const os = require('os');
 const app = express();
 app.use(cors());
 
-// Vercel filesystem is read-only; os.tmpdir() is the only place we can write
+// Render allows writing to temp folders, os.tmpdir() is still the best practice
 const upload = multer({ dest: os.tmpdir() });
 
-// Add a test route so you can verify the deployment is working
+// Test route
 app.get('/', (req, res) => {
-  res.send('APK Parser Backend is Running!');
+  res.send('APK Parser Backend is Running on Render!');
 });
 
 app.post('/upload', upload.single('apk'), async (req, res) => {
@@ -34,7 +34,6 @@ app.post('/upload', upload.single('apk'), async (req, res) => {
 
     const packageName = manifest.package || 'Unknown Package';
 
-    // Clean up temporary file immediately
     if (fs.existsSync(filePath)) {
         fs.unlinkSync(filePath);
     }
@@ -54,5 +53,11 @@ app.post('/upload', upload.single('apk'), async (req, res) => {
   }
 });
 
-// Export for Vercel serverless execution
+// --- CHANGE THIS PART FOR RENDER ---
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+
+// You can keep this, but app.listen is what Render uses
 module.exports = app;
