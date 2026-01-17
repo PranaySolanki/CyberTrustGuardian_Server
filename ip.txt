@@ -1,0 +1,43 @@
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+
+Wireless LAN adapter Local Area Connection* 10:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . : 
+   IPv6 Address. . . . . . . . . . . : 2409:4080:db2:f0b:d55e:3ed2:432e:245b
+   Temporary IPv6 Address. . . . . . : 2409:4080:db2:f0b:25e0:e081:6596:e316
+   Link-local IPv6 Address . . . . . : fe80::a572:c95f:a72a:e577%14
+   IPv4 Address. . . . . . . . . . . : 10.69.24.228
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : fe80::6442:3aff:fe0f:cbe4%14
+                                       192.168.1.1
+                                       10.69.24.37
+
+Ethernet adapter Bluetooth Network Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+
+Ethernet adapter vEthernet (Default Switch):
+
+   Connection-specific DNS Suffix  . : 
+   Link-local IPv6 Address . . . . . : fe80::dbf3:c2e1:3705:55f7%23
+   IPv4 Address. . . . . . . . . . . : 172.31.80.1
+   Subnet Mask . . . . . . . . . . . : 255.255.240.0
+   Default Gateway . . . . . . . . . : 
