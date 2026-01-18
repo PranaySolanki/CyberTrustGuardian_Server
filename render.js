@@ -8,7 +8,7 @@ const os = require('os');
 const app = express();
 app.use(cors());
 
-// Render allows writing to temp folders, os.tmpdir() is still the best practice
+// Render allows writing to temp folders, os.tmpdir() 
 const upload = multer({ dest: os.tmpdir() });
 
 // Test route
