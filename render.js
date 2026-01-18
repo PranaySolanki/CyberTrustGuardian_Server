@@ -53,11 +53,11 @@ app.post('/upload', upload.single('apk'), async (req, res) => {
   }
 });
 
-// --- CHANGE THIS PART FOR RENDER ---
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server is running on port ${PORT}`);
 });
 
-// You can keep this, but app.listen is what Render uses
+
 module.exports = app;
